@@ -1,11 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices"],
+  "extends": [
+    "config:best-practices"
+  ],
   "commitMessageSuffix": "(from {{currentVersion}})",
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^Dockerfile$"],
+      "fileMatch": [
+        "^Dockerfile$"
+      ],
       "matchStrings": [
         "#\\s*renovate:\\s*datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\sENV .*?_VERSION=\"(?<currentValue>.*)\"\\s"
       ],
@@ -14,8 +18,12 @@
   ],
   "packageRules": [
     {
-      "matchDatasources": ["deb"],
-      "packageNames": ["nginx"],
+      "matchDatasources": [
+        "deb"
+      ],
+      "matchPackageNames": [
+        "nginx"
+      ],
       "registryUrls": [
         "https://nginx.org/packages/ubuntu?suite=jammy&components=nginx&binaryArch=amd64"
       ]
