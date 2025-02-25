@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 # renovate: datasource=deb depName=nginx versioning=loose
-ENV NGINX_VERSION="1.26.0-1~jammy"
+ENV NGINX_VERSION="1.26.3-1~jammy"
 
 RUN apt-get update \
   && apt-get install -y \
