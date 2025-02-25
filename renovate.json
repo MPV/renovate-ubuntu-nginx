@@ -15,7 +15,7 @@
   "packageRules": [
     {
       "matchDatasources": ["deb"],
-      "packageNames": ["nginx"],
+      "matchPackageNames": ["nginx"],
       "registryUrls": [
         "https://nginx.org/packages/ubuntu?suite=jammy&components=nginx&binaryArch=amd64"
       ]
