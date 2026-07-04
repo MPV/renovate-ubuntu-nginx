@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:26.04@sha256:b7f48194d4d8b763a478a621cdc81c27be222ba2206ca3ca6bc42b49685f3d9e
 
 # renovate: datasource=deb depName=nginx versioning=loose
 ENV NGINX_VERSION="1.26.0-1~jammy"
